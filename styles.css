@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1b1b1b;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000000;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 50px !important;
+    font-weight: 700 !important;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+header .logo .logo-part1 {
+    color: #ffa31a;
+}
+
+header .logo .logo-part2 {
+    color: #ffffff;
+}
+
+
+
+nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+#timer {
+    background-color: #ffa31a;
+    color: #000;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 5px 0;
+}
+
+@media (max-width: 1200px) {
+    .content-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .content-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.content-block {
+    display: block;
+    background-color: #333;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    height: 390px; /* Augmentation de 30% par rapport à 300px */
+}
+
+.content-block:hover {
+    transform: scale(1.05);
+}
+
+.content-block img {
+    width: 100%;
+    height: 280px; /* Augmentation de 30% par rapport à 200px */
+    object-fit: cover;
+}
+
+.content-block h3 {
+    color: #ffa31a;
+    margin: 10px;
+}
+
+.content-block p {
+    color: #fff;
+    margin: 10px;
+}
+
+.rating {
+    margin: 20px;
+    color: #ffa31a;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/* START - BOUTON SHOP STYLE */
+.shop-button {
+    display: inline-block;
+    padding: 8px 30px;
+    background-color: #ffffff;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 12.5px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.shop-button:hover {
+    background-color: #27f031;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.shop-button:active {
+    transform: translateY(-1px);
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
+}
+/* END - BOUTON SHOP STYLE */
